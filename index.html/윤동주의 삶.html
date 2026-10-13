@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윤동주의 삶</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Noto Serif KR & Pretendard -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            skysoft: {
+              50: '#f0f7fd',
+              100: '#e0effa',
+              200: '#cbe3f6',
+              300: '#b0d4f0',
+            }
+          },
+          fontFamily: {
+            serif: ['"Noto Serif KR"', 'serif'],
+            sans: ['"Pretendard"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-skysoft-100 via-skysoft-50 to-skysoft-100 text-slate-800 font-sans antialiased flex flex-col justify-between selection:bg-sky-200">
+
+  <!-- 상단 내비게이션 바 -->
+  <nav class="w-full bg-white/70 backdrop-blur-md border-b border-sky-100 px-6 py-3 flex items-center justify-between text-sm">
+    <div class="font-serif font-bold text-sky-900 tracking-wide">윤동주 아카이브</div>
+    <div class="flex items-center space-x-5 font-serif text-slate-600">
+      <a href="윤동주 소개.html" class="hover:text-sky-800 transition-colors">나는</a>
+      <a href="윤동주의 삶.html" class="text-sky-700 font-bold border-b-2 border-sky-600 pb-0.5">나의 삶</a>
+      <a href="윤동주의 시집.html" class="hover:text-sky-800 transition-colors">나의 시</a>
+    </div>
+  </nav>
+
+  <!-- 상단 헤더: 좌측 상단 '윤동주의 삶' 타이틀 -->
+  <header class="w-full px-6 py-5 md:px-10 md:py-7 flex items-center justify-between">
+    <div class="flex items-center space-x-2.5">
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/85 shadow-sm text-sky-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      </span>
+      <h1 class="text-xl md:text-2xl font-bold tracking-tight text-slate-800 font-serif">
+        윤동주의 삶
+      </h1>
+    </div>
+    <div class="text-xs md:text-sm text-sky-800/70 font-medium tracking-wide font-serif">
+      연대기별 삶의 궤적
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 영역: 중앙 타임라인 카드 -->
+  <main class="flex-grow flex items-center justify-center px-4 py-8 md:py-12">
+    <div class="w-full max-w-4xl bg-white/95 backdrop-blur-sm rounded-3xl shadow-xl shadow-sky-900/5 border border-white/80 p-6 sm:p-10 md:p-12 transition-all">
+      
+      <!-- 상단 인트로 소제목 -->
+      <div class="mb-10 pb-4 border-b border-sky-100 flex items-center justify-between">
+        <div>
+          <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider text-sky-700 bg-sky-100/70 rounded-full mb-2">
+            Chronology
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900">
+            시인의 발자취
+          </h2>
+        </div>
+        <span class="text-xs sm:text-sm text-slate-400 font-serif italic hidden sm:inline">
+          1917 ~ 1945
+        </span>
+      </div>
+
+      <!-- 타임라인 리스트 시작 -->
+      <div class="relative pl-6 sm:pl-8 space-y-12 before:absolute before:left-[11px] sm:before:left-[15px] before:top-3 before:bottom-3 before:w-0 before:border-l-2 before:border-dotted before:border-sky-300">
+
+        <!-- 1. 출생 및 유년 시절 -->
+        <div class="relative group">
+          <div class="absolute -left-[30px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-2 border-sky-500 shadow-sm flex items-center justify-center">
+            <div class="w-1.5 h-1.5 rounded-full bg-sky-600"></div>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-lg sm:text-xl font-bold font-serif text-slate-900">
+              출생 및 유년 시절
+            </h3>
+            <p class="text-xs sm:text-sm font-serif italic text-sky-700 font-medium">
+              1917년 ~ 1930년대 초
+            </p>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-700 font-serif pt-1 break-keep">
+              북간도 명동촌(明東村)에서 태어났습니다. 민족의식과 기독교 신앙이 깊게 뿌리내린 공동체 환경과 명동학교에서 민족주의적 분위기를 체득하며 성장했습니다. 고종사촌인 송몽규, 벗 문익환 등과 함께 학창 시절을 보냈습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. 문학적 성장과 청년기 (육필 원고 이미지) -->
+        <div class="relative group">
+          <div class="absolute -left-[30px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-2 border-sky-500 shadow-sm flex items-center justify-center">
+            <div class="w-1.5 h-1.5 rounded-full bg-sky-600"></div>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg sm:text-xl font-bold font-serif text-slate-900">
+              문학적 성장과 청년기
+            </h3>
+            <p class="text-xs sm:text-sm font-serif italic text-sky-700 font-medium">
+              1935년 ~ 1941년
+            </p>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-700 font-serif pt-1 break-keep">
+              평양 숭실중학교와 광명중학교를 거쳐 1938년 서울 연희전문학교(현 연세대학교) 문과에 입학했습니다. 재학 중 잡지 《소년》 등에 시를 발표하며 정식 등단했고, 1941년 졸업 즈음 《서시》, 《별 헤는 밤》, 《자화상》 등을 묶어 시집 발간을 추진했으나 일제의 검열 우려로 성사되지 못했습니다.
+            </p>
+
+            <div class="mt-4 pt-1">
+              <figure class="overflow-hidden rounded-2xl border border-sky-100 bg-sky-50/50 p-2.5 sm:p-3 shadow-sm">
+                <div class="relative overflow-hidden rounded-xl bg-white max-h-72 sm:max-h-80 flex items-center justify-center">
+                  <img 
+                    src="윤동주4.jpg" 
+                    alt="윤동주 육필 원고 《별 헤는 밤》과 윤동주 시인" 
+                    onerror="this.onerror=null; this.src='https://ojsfile.ohmynews.com/STD_IMG_FILE/2021/0215/IE002762291_STD.jpg';"
+                    class="w-full h-full object-contain object-center"
+                  />
+                </div>
+                <figcaption class="mt-2.5 px-1 text-xs text-slate-500 font-serif flex items-center justify-between">
+                  <span>연희전문 재학 시절 작성된 육필 원고 《별 헤는 밤》과 청년 윤동주</span>
+                  <span class="text-sky-600/80 text-[11px] font-sans font-medium">1941년 집필</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 일본 유학과 체포 -->
+        <div class="relative group">
+          <div class="absolute -left-[30px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-2 border-sky-500 shadow-sm flex items-center justify-center">
+            <div class="w-1.5 h-1.5 rounded-full bg-sky-600"></div>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-lg sm:text-xl font-bold font-serif text-slate-900">
+              일본 유학과 체포
+            </h3>
+            <p class="text-xs sm:text-sm font-serif italic text-sky-700 font-medium">
+              1942년 ~ 1943년
+            </p>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-700 font-serif pt-1 break-keep">
+              학문을 계속하기 위해 일본으로 건너가 릿쿄 대학을 거쳐 교토 도시샤 대학 영문과에 입학했습니다. 그러나 1943년 7월, 사상범 및 항일 독립운동 혐의로 일본 경찰에 체포되었습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. 옥중 요절과 불멸의 유산 (정병욱 사진) -->
+        <div class="relative group">
+          <div class="absolute -left-[30px] sm:-left-[39px] top-1 w-5 h-5 rounded-full bg-white border-2 border-sky-500 shadow-sm flex items-center justify-center">
+            <div class="w-1.5 h-1.5 rounded-full bg-sky-600"></div>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-lg sm:text-xl font-bold font-serif text-slate-900">
+              옥중 요절과 불멸의 유산
+            </h3>
+            <p class="text-xs sm:text-sm font-serif italic text-sky-700 font-medium">
+              1945년 ~ 1948년
+            </p>
+            <p class="text-sm sm:text-[15px] leading-relaxed text-slate-700 font-serif pt-1 break-keep">
+              후쿠오카 형무소에서 2년형을 선고받고 복역하던 중, 광복을 불과 반년 앞둔 1945년 2월 16일 27세의 나이로 옥사했습니다. 해방 후인 1948년, 벗 정병욱과 유족들이 간직해 온 유고를 모아 시집 <strong class="text-sky-900 font-semibold">《하늘과 바람과 별과 시》</strong>가 정식 출간되었습니다.
+            </p>
+
+            <div class="mt-4 pt-1">
+              <figure class="overflow-hidden rounded-2xl border border-sky-100 bg-sky-50/50 p-2.5 sm:p-3 shadow-sm">
+                <div class="relative overflow-hidden rounded-xl bg-white max-h-72 sm:max-h-80 flex items-center justify-center">
+                  <img 
+                    src="윤동주3.jpg" 
+                    alt="윤동주와 후배 정병욱" 
+                    onerror="this.onerror=null; this.src='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbl1eYh%2Fbtq1cZp8E3V%2Fkk4h3E7r6gX2mKj8i1XQzK%2Fimg.jpg';"
+                    class="w-full h-full object-contain object-center"
+                  />
+                </div>
+                <figcaption class="mt-2.5 px-1 text-xs leading-relaxed text-slate-500 font-serif break-keep">
+                  <span class="font-bold text-slate-700 block sm:inline mr-2">윤동주와 정병욱</span>
+                  정병욱은 윤동주가 맡긴 육필 원고를 광양 망덕포구 고향집 마루 밑에 숨겨 지켜내었고, 해방 후 시집 《하늘과 바람과 별과 시》가 세상의 빛을 보는 데 결정적인 역할을 하였습니다.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-sky-100/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
+        <span class="italic font-serif">"오늘 밤에도 별이 바람에 스치운다."</span>
+        <span class="text-sky-700 font-medium font-serif">하늘과 바람과 별과 시 · 유고 시집 수록</span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="w-full text-center py-6 text-xs text-sky-900/50 font-light">
+    영원한 청년 시인 윤동주(尹東柱)의 삶과 문학
+  </footer>
+
+</body>
+</html>
